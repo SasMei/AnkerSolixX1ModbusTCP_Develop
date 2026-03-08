@@ -1,0 +1,2043 @@
+# Venus A registers are untested.
+# Base register map generated from CSV (v3 Description).
+# Verify all addresses, names, and mappings on real hardware before use.
+# Some entries may be incorrect, duplicated, or unmatched.
+# See `# UNMATCHED_CSV_ENTRIES` at the end of this file.
+
+MISSING:
+    sensor:
+        - sn_code
+        - software_version
+        - ac_offgrid_power
+        - fault_status
+        - alarm_status
+    binary:
+        - discharge_limit_mode
+    select:
+        - grid_standard
+    number:
+        - charging_cutoff_capacity
+        - discharging_cutoff_capacity
+
+
+SENSOR_DEFINITIONS:
+    # ========================================================================
+    # CLASSIFICATION 1 : Information (RO)
+    # ========================================================================
+
+    # ===== Information (RO) =====
+
+    plant_status:
+        register: 10000
+        unit: null
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    info_battery_status:
+        register: 10001
+        unit: null
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pv_power:
+        register: 10002
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    3rd_party_pv_power:
+        register: 10004
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    active_power_pcs_ac_side:
+        register: 10006
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    info_battery_power:
+        register: 10008
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    load_power:
+        register: 10010
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    grid_power:
+        register: 10012
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    soc:
+        register: 10014
+        scale: 1
+        unit: "%"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    soh:
+        register: 10015
+        scale: 1
+        unit: "%"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    daily_pv_generation:
+        register: 10016
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    total_pv_generation:
+        register: 10018
+        count: 2
+        scale: 0.01
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 0
+        scan_interval: low
+
+    daily_battery_charge_energy:
+        register: 10020
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    total_battery_charge_energy:
+        register: 10022
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    daily_load_consumption_energy:
+        register: 10024
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    total_load_consumption_energy:
+        register: 10026
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    daily_purchased_energy:
+        register: 10028
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    total_purchased_energy:
+        register: 10030
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    daily_feed_in_energy:
+        register: 10032
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    total_feed_in_energy:
+        register: 10034
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    rechargeable_power:
+        register: 10036
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    dischargeable_power:
+        register: 10038
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    number_of_pcs:
+        register: 10040
+        unit: null
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    number_of_available_pcs:
+        register: 10041
+        unit: null
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    system_alarm_1:
+        register: 10042
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    system_alarm_2:
+        register: 10043
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    system_alarm_3:
+        register: 10044
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    system_alarm_4:
+        register: 10045
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    system_alarm_5:
+        register: 10046
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    system_alarm_6:
+        register: 10047
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    system_alarm_7:
+        register: 10048
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    system_alarm_8:
+        register: 10049
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    # ========================================================================
+    # CLASSIFICATION 2 : Control (RW)
+    # ========================================================================
+
+    # ===== Control (RW) =====
+
+    system_time:
+        register: 10060
+        count: 2
+        unit: null
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    time_zone:
+        register: 10062
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    dst:
+        register: 10063
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    work_mode:
+        register: 10064
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    active_power_control_percentage:
+        register: 10069
+        scale: 1
+        unit: "%"
+        enabled_by_default: true
+        data_type: int16
+        precision: 1
+        scan_interval: low
+
+    reactive_power_control_percentage:
+        register: 10070
+        scale: 1
+        unit: "%"
+        enabled_by_default: true
+        data_type: int16
+        precision: 1
+        scan_interval: low
+
+    battery_charge_discharge_control:
+        register: 10071
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    switch_on_off_control:
+        register: 10073
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    export_power_limit_control_mode:
+        register: 10074
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    export_power_limit_control_value:
+        register: 10075
+        count: 2
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    import_power_limit_control_mode:
+        register: 10077
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    import_power_limit_control_value:
+        register: 10078
+        count: 2
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    com_disconnect_tie_with_vpp:
+        register: 10080
+        scale: 1
+        unit: "s"
+        device_class: "duration"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    # ========================================================================
+    # CLASSIFICATION 3 : PCS - Basic Information
+    # ========================================================================
+
+    # ===== PCS - Basic Information =====
+
+    pcs_model_name:
+        register: 10090
+        count: 10
+        unit: null
+        enabled_by_default: true
+        data_type: string
+        precision: 1
+        scan_interval: low
+
+    pcs_sn:
+        register: 10100
+        count: 12
+        unit: null
+        enabled_by_default: true
+        data_type: string
+        precision: 1
+        scan_interval: low
+
+    pcs_software_version:
+        register: 10112
+        count: 6
+        unit: null
+        enabled_by_default: true
+        data_type: string
+        precision: 1
+        scan_interval: low
+
+    pcs_hardware_version:
+        register: 10118
+        count: 6
+        unit: null
+        enabled_by_default: true
+        data_type: string
+        precision: 1
+        scan_interval: low
+
+    pcs_rated_power:
+        register: 10124
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    pcs_maximum_active_power:
+        register: 10126
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    pcs_maximum_apparent_power:
+        register: 10128
+        count: 2
+        scale: 1
+        unit: "kVA"
+        device_class: "apparent_power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    pcs_numbers_of_mppt:
+        register: 10130
+        scale: 1
+        unit: null
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_strings_per_mppt:
+        register: 10131
+        scale: 1
+        unit: null
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_output_mode:
+        register: 10132
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    # ========================================================================
+    # CLASSIFICATION 4 : PCS - Status & Alarm
+    # ========================================================================
+
+    # ===== PCS - Status & Alarm =====
+
+    pcs_work_status:
+        register: 10143
+        scale: 1
+        unit: null
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_alarm_1:
+        register: 10144
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_alarm_2:
+        register: 10145
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_alarm_3:
+        register: 10146
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_alarm_4:
+        register: 10147
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_alarm_5:
+        register: 10148
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_alarm_6:
+        register: 10149
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_alarm_7:
+        register: 10150
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_alarm_8:
+        register: 10151
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_alarm_9:
+        register: 10152
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_alarm_10:
+        register: 10153
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_alarm_11:
+        register: 10154
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_alarm_12:
+        register: 10155
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_internal_temperature:
+        register: 10156
+        scale: 0.1
+        unit: "°C"
+        device_class: "temperature"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int16
+        precision: 1
+        scan_interval: low
+
+    # ========================================================================
+    # CLASSIFICATION 5 : PCS - PV Information
+    # ========================================================================
+
+    # ===== PCS - PV Information =====
+
+    pcs_pv1_voltage:
+        register: 10167
+        scale: 1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv1_current:
+        register: 10168
+        scale: 1
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv2_voltage:
+        register: 10169
+        scale: 1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv2_current:
+        register: 10170
+        scale: 1
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv3_voltage:
+        register: 10171
+        scale: 1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv3_current:
+        register: 10172
+        scale: 1
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv4_voltage:
+        register: 10173
+        scale: 1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv4_current:
+        register: 10174
+        scale: 1
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv5_voltage:
+        register: 10175
+        scale: 1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv5_current:
+        register: 10176
+        scale: 1
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv6_voltage:
+        register: 10177
+        scale: 1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv6_current:
+        register: 10178
+        scale: 1
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv7_voltage:
+        register: 10179
+        scale: 1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv7_current:
+        register: 10180
+        scale: 1
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv8_voltage:
+        register: 10181
+        scale: 1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_pv8_current:
+        register: 10182
+        scale: 1
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    pcs_totalpv_power:
+        register: 10183
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    pcs_daily_pv_generation:
+        register: 10185
+        count: 2
+        scale: 1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    pcs_total_pv_generation:
+        register: 10187
+        count: 2
+        scale: 1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    # ========================================================================
+    # CLASSIFICATION 6 : Grid Information
+    # ========================================================================
+
+    # ===== Grid Information =====
+
+    grid_uab_voltage:
+        register: 10199
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    grid_ubc_voltage:
+        register: 10200
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    grid_uca_voltage:
+        register: 10201
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    grid_phase_a_voltage:
+        register: 10202
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    grid_phase_b_voltage:
+        register: 10203
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    grid_phase_c_voltage:
+        register: 10204
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    grid_phase_a_current:
+        register: 10205
+        scale: 0.01
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int16
+        precision: 1
+        scan_interval: low
+
+    grid_phase_b_current:
+        register: 10206
+        scale: 0.01
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int16
+        precision: 1
+        scan_interval: low
+
+    grid_phase_c_current:
+        register: 10207
+        scale: 0.01
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int16
+        precision: 1
+        scan_interval: low
+
+    grid_active_power:
+        register: 10208
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    grid_reactive_power:
+        register: 10210
+        count: 2
+        scale: 1
+        unit: "kvar"
+        device_class: "reactive_power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    grid_power_factor:
+        register: 10212
+        scale: 1
+        unit: null
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int16
+        precision: 1
+        scan_interval: low
+
+    grid_frequency:
+        register: 10213
+        scale: 0.01
+        unit: "Hz"
+        device_class: "frequency"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    # ========================================================================
+    # CLASSIFICATION 7 : Backup Information
+    # ========================================================================
+
+    # ===== Backup Information =====
+
+    backup_uab_voltage:
+        register: 10224
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    backup_ubc_voltage:
+        register: 10225
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    backup_uca_voltage:
+        register: 10226
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    backup_phase_a_voltage:
+        register: 10227
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    backup_phase_b_voltage:
+        register: 10228
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    backup_phase_c_voltage:
+        register: 10229
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    backup_phase_a_current:
+        register: 10230
+        scale: 0.01
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int16
+        precision: 1
+        scan_interval: low
+
+    backup_phase_b_current:
+        register: 10231
+        scale: 0.01
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int16
+        precision: 1
+        scan_interval: low
+
+    backup_phase_c_current:
+        register: 10232
+        scale: 0.01
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int16
+        precision: 1
+        scan_interval: low
+
+    backup_active_power:
+        register: 10233
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    backup_reactive_power:
+        register: 10235
+        count: 2
+        scale: 1
+        unit: "kvar"
+        device_class: "reactive_power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    backup_power_factor:
+        register: 10237
+        scale: 1
+        unit: null
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int16
+        precision: 1
+        scan_interval: low
+
+    backup_frequency:
+        register: 10238
+        scale: 0.01
+        unit: "Hz"
+        device_class: "frequency"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    # ========================================================================
+    # CLASSIFICATION 8 : Battery  Information
+    # ========================================================================
+
+    # ===== Battery  Information =====
+
+    battery_number_of_packs:
+        register: 10249
+        scale: 1
+        unit: null
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    battery_rated_capacity:
+        register: 10250
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    battery_status:
+        register: 10252
+        unit: null
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    battery_voltage:
+        register: 10253
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    battery_power:
+        register: 10254
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    battery_soc:
+        register: 10256
+        scale: 1
+        unit: "%"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    battery_soh:
+        register: 10257
+        scale: 1
+        unit: "%"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    battery_daily_charge_energy:
+        register: 10258
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    battery_daily_discharge_energy:
+        register: 10260
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    battery_total_charge_energy:
+        register: 10262
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    battery_total_discharge_energy:
+        register: 10264
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    battery_alarm_1:
+        register: 10266
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    battery_alarm_2:
+        register: 10267
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    battery_alarm_3:
+        register: 10268
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    battery_alarm_4:
+        register: 10269
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    battery_alarm_5:
+        register: 10270
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    battery_alarm_6:
+        register: 10271
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    battery_alarm_7:
+        register: 10272
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    battery_alarm_8:
+        register: 10273
+        scale: 1
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    # ========================================================================
+    # CLASSIFICATION 9 : Battery Pack 1 Information
+    # ========================================================================
+
+    # ===== Battery Pack 1 Information =====
+
+    bp1_model_name:
+        register: 10284
+        count: 10
+        unit: null
+        enabled_by_default: true
+        data_type: string
+        precision: 1
+        scan_interval: low
+
+    bp1_sn:
+        register: 10294
+        count: 12
+        unit: null
+        enabled_by_default: true
+        data_type: string
+        precision: 1
+        scan_interval: low
+
+    bp1_software_version:
+        register: 10306
+        count: 6
+        unit: null
+        enabled_by_default: true
+        data_type: string
+        precision: 1
+        scan_interval: low
+
+    bp1_hardware_version:
+        register: 10312
+        count: 6
+        unit: null
+        enabled_by_default: true
+        data_type: string
+        precision: 1
+        scan_interval: low
+
+    bp1_rate_capacity:
+        register: 10318
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    bp1_status:
+        register: 10320
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    bp1_voltage:
+        register: 10321
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    bp1_power:
+        register: 10322
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    bp1_soc:
+        register: 10324
+        scale: 1
+        unit: "%"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    bp1_soh:
+        register: 10325
+        scale: 1
+        unit: "%"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    bp1_total_discharge_energy:
+        register: 10326
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    bp1_maximum_temperature:
+        register: 10328
+        scale: 1
+        unit: "°C"
+        device_class: "temperature"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    bp1_minimum_temperature:
+        register: 10329
+        scale: 1
+        unit: "°C"
+        device_class: "temperature"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    # ========================================================================
+    # CLASSIFICATION 10 : Battery Pack 2 Information
+    # ========================================================================
+
+    # ===== Battery Pack 2 Information =====
+
+    bp2_model_name:
+        register: 10340
+        count: 10
+        unit: null
+        enabled_by_default: true
+        data_type: string
+        precision: 1
+        scan_interval: low
+
+    bp2_sn:
+        register: 10350
+        count: 12
+        unit: null
+        enabled_by_default: true
+        data_type: string
+        precision: 1
+        scan_interval: low
+
+    bp2_software_version:
+        register: 10362
+        count: 6
+        unit: null
+        enabled_by_default: true
+        data_type: string
+        precision: 1
+        scan_interval: low
+
+    bp2_hardware_version:
+        register: 10368
+        count: 6
+        unit: null
+        enabled_by_default: true
+        data_type: string
+        precision: 1
+        scan_interval: low
+
+    bp2_rate_capacity:
+        register: 10374
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    bp2_status:
+        register: 10376
+        unit: null
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    bp2_voltage:
+        register: 10377
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    bp2_power:
+        register: 10378
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    bp2_soc:
+        register: 10380
+        scale: 1
+        unit: "%"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    bp2_soh:
+        register: 10381
+        scale: 1
+        unit: "%"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    bp2_total_discharge_energy:
+        register: 10382
+        count: 2
+        scale: 0.1
+        unit: "kwH"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    bp2_maximum_temperature:
+        register: 10384
+        scale: 1
+        unit: "°C"
+        device_class: "temperature"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    bp2_minimum_temperature:
+        register: 10385
+        scale: 1
+        unit: "°C"
+        device_class: "temperature"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    # ========================================================================
+    # CLASSIFICATION 11 : Meter Information
+    # ========================================================================
+
+    # ===== Meter Information =====
+
+    meter_model:
+        register: 10620
+        unit: null
+        enabled_by_default: true
+        precision: 1
+        scan_interval: low
+
+    meter_type:
+        register: 10630
+        unit: null
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    meter_status:
+        register: 10631
+        unit: null
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    meter_phase_a_voltage:
+        register: 10632
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    meter_phase_b_voltage:
+        register: 10633
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    meter_phase_c_voltage:
+        register: 10634
+        scale: 0.1
+        unit: "V"
+        device_class: "voltage"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    meter_phase_a_current:
+        register: 10635
+        scale: 0.01
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    meter_phase_b_current:
+        register: 10636
+        scale: 0.01
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    meter_phasec_current:
+        register: 10637
+        scale: 0.01
+        unit: "A"
+        device_class: "current"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    meter_phase_a_active_power:
+        register: 10638
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    meter_phase_b_active_power:
+        register: 10640
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    meter_phase_c_active_power:
+        register: 10642
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    meter_total_active_power:
+        register: 10644
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    meter_total_reactive_power:
+        register: 10646
+        count: 2
+        scale: 1
+        unit: "W"
+        device_class: "power"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int32
+        precision: 1
+        scan_interval: low
+
+    meter_power_factor:
+        register: 10648
+        scale: 1
+        unit: null
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: int16
+        precision: 1
+        scan_interval: low
+
+    meter_grid_frequency:
+        register: 10649
+        scale: 0.01
+        unit: "Hz"
+        device_class: "frequency"
+        state_class: "measurement"
+        enabled_by_default: true
+        data_type: uint16
+        precision: 1
+        scan_interval: low
+
+    meter_phase_a_forward_active_energy:
+        register: 10650
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    meter_phase_b_forward_active_energy:
+        register: 10652
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    meter_phase_c_forward_active_energy:
+        register: 10654
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    meter_total_forward_active_energy:
+        register: 10656
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    meter_phase_a_reverse_active_energy:
+        register: 10658
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    meter_phase_b_reverse_active_energy:
+        register: 10660
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    meter_phase_c_reverse_active_energy:
+        register: 10662
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+    meter_total_reverse_active_energy:
+        register: 10664
+        count: 2
+        scale: 0.1
+        unit: "kWh"
+        device_class: "energy"
+        state_class: "total_increasing"
+        enabled_by_default: true
+        data_type: uint32
+        precision: 1
+        scan_interval: low
+
+
+
+EFFICIENCY_SENSOR_DEFINITIONS:
+    round_trip_efficiency_total:
+        key: round_trip_efficiency_total
+        unit: "%"
+        category: diagnostic
+        state_class: measurement
+        mode: round_trip
+        dependency_keys:
+        charge: total_charging_energy
+        discharge: total_discharging_energy
+    round_trip_efficiency_monthly:
+        key: round_trip_efficiency_monthly
+        unit: "%"
+        category: diagnostic
+        state_class: measurement
+        mode: round_trip
+        dependency_keys:
+        charge: total_monthly_charging_energy
+        discharge: total_monthly_discharging_energy
+    conversion_efficiency:
+        key: conversion_efficiency
+        unit: "%"
+        category: diagnostic
+        state_class: measurement
+        mode: conversion
+        dependency_keys:
+        battery_power: battery_power
+        ac_power: ac_power
+
+STORED_ENERGY_SENSOR_DEFINITIONS:
+    stored_energy:
+        key: stored_energy
+        unit: kWh
+        device_class: energy
+        state_class: total
+        dependency_keys:
+        soc: battery_soc
+        capacity: battery_total_energy
