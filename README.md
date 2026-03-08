@@ -1,4 +1,4 @@
-# Anker Solix X1 Mmodbus TCP - Home Assistant Integration
+# Anker Solix X1 Modbus TCP - Home Assistant Integration
 
 This is a custom HACS-compatible integration for the Anker Solix X1, using **Modbus TCP** provided by the Anker Solix X1 itself. No YAML required. The integration provides sensors to monitor the battery directly from Home Assistant.
 
@@ -43,7 +43,7 @@ This integration utilizes an unofficial Python library to communicate with the A
 ## 🚀 Installation
 
 1. Add this repository to HACS **Integrations → Custom repositories**
-[![Add repository to HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=SasMei&repository=anker_solixx1_modbustcp&category=integration)
+[![Add repository to HACS](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=SasMei&repository=AnkerSolixX1ModbusTCP&category=integration)
 2. Install the “Anker Solix X1 Modbus TCP” integration
 3. Restart Home Assistant
 4. Add the integration via **Settings → Devices & Services**
