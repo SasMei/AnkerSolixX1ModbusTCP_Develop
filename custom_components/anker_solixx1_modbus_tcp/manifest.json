@@ -3,7 +3,7 @@
   "name": "Anker Solix X1 ModbusTCP",
   "version": "2026.3.1",
   "config_flow": true,
-  "documentation": "https://github.com/SasMei/test_modbus",
+  "documentation": "https://github.com/SasMei/anker_solixx1_modbustcp",
   "requirements": ["pymodbus>=3.9.2"],
   "codeowners": ["@SasMei"],
   "iot_class": "local_polling"

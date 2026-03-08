@@ -1,12 +1,12 @@
 {
   "name": "Anker Solix X1 ModbusTCP",
   "config_flow": true,
-  "domains": ["solixx1_modbus"],
-  "homeassistant": "2025.9.0",
+  "domains": ["solixx1_modtcp"],
+  "homeassistant": "2026.3.0",
   "country": "DE",
   "render_readme": true,
   "render_hacs": true,
-  "issue_tracker": "https://github.com/SasMei/test_modbus/issues",
-  "loggers": ["custom_components.solixx1_modbus"],
+  "issue_tracker": "https://github.com/SasMei/anker_solixx1_modbustcp/issues",
+  "loggers": ["custom_components.anker_solixx1_modbustcp"],
   "codeowners": ["@SasMei"]
 }
