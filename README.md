@@ -47,7 +47,6 @@ This integration utilizes an unofficial Python library to communicate with the A
 2. Install the “Anker Solix X1 Modbus TCP” integration
 3. Restart Home Assistant
 4. Add the integration via **Settings → Devices & Services**
-[![Open your Home Assistant instance and show the integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=solixx1_modtcp)  
 5. Enter the connection details:
    - IP address of your Anker Solix X1
 
