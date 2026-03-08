@@ -2,6 +2,11 @@
 
 This is a custom HACS-compatible integration for the Anker Solix X1, using **Modbus TCP** provided by the Anker Solix X1 itself. No YAML required. The integration provides sensors to monitor the battery directly from Home Assistant.
 
+## Status & next steps
+
+- implement the use of the scale setting. Currenlty values are available and seem to be correct. Just their scale is wrong (for most int32 and uint32 values)
+- I want to separate the sensor into sections for better overview/visibility or separate the sensors in different devices. The X1 consists of 1 ore more batteries, smartmeter, PCS (Power Conversion System, etc.)
+
 ## Thanks to ViperRNMC
 
 I built this Home Assistant integration on top of ViperRNMC’s marstek_venus_modbus integration because it allowed me to test quickly and achieve initial results with minimal effort.
