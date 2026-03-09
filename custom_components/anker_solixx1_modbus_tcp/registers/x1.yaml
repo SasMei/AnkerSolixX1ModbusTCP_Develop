@@ -55,7 +55,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     3rd_party_pv_power:
         register: 10004
@@ -67,7 +67,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     active_power_pcs_ac_side:
         register: 10006
@@ -79,7 +79,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     info_battery_power:
         register: 10008
@@ -103,7 +103,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     grid_power:
         register: 10012
@@ -115,7 +115,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     soc:
         register: 10014
@@ -125,7 +125,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     soh:
         register: 10015
@@ -135,7 +135,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     daily_pv_generation:
         register: 10016
@@ -147,19 +147,19 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     total_pv_generation:
         register: 10018
         count: 2
-        scale: 0.01
+        scale: 0.1
         unit: "kWh"
         device_class: "energy"
         state_class: "total_increasing"
         enabled_by_default: true
         data_type: uint32
-        precision: 0
-        scan_interval: low
+        precision: 1
+        scan_interval: very_low
 
     daily_battery_charge_energy:
         register: 10020
@@ -171,7 +171,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     total_battery_charge_energy:
         register: 10022
@@ -183,7 +183,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     daily_load_consumption_energy:
         register: 10024
@@ -195,7 +195,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     total_load_consumption_energy:
         register: 10026
@@ -207,7 +207,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     daily_purchased_energy:
         register: 10028
@@ -219,7 +219,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     total_purchased_energy:
         register: 10030
@@ -231,7 +231,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     daily_feed_in_energy:
         register: 10032
@@ -243,7 +243,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     total_feed_in_energy:
         register: 10034
@@ -255,7 +255,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     rechargeable_power:
         register: 10036
@@ -267,7 +267,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     dischargeable_power:
         register: 10038
@@ -279,7 +279,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     number_of_pcs:
         register: 10040
@@ -288,7 +288,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     number_of_available_pcs:
         register: 10041
@@ -297,7 +297,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     system_alarm_1:
         register: 10042
@@ -305,7 +305,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     system_alarm_2:
         register: 10043
@@ -313,7 +313,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     system_alarm_3:
         register: 10044
@@ -321,7 +321,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     system_alarm_4:
         register: 10045
@@ -329,7 +329,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     system_alarm_5:
         register: 10046
@@ -337,7 +337,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     system_alarm_6:
         register: 10047
@@ -345,7 +345,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     system_alarm_7:
         register: 10048
@@ -353,7 +353,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     system_alarm_8:
         register: 10049
@@ -361,7 +361,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     # ========================================================================
     # CLASSIFICATION 2 : Control (RW)
@@ -373,10 +373,11 @@ SENSOR_DEFINITIONS:
         register: 10060
         count: 2
         unit: null
+        device_class: "timestamp"
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     time_zone:
         register: 10062
@@ -384,7 +385,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     dst:
         register: 10063
@@ -392,7 +393,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     work_mode:
         register: 10064
@@ -505,7 +506,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: string
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     pcs_sn:
         register: 10100
@@ -514,7 +515,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: string
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     pcs_software_version:
         register: 10112
@@ -523,7 +524,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: string
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     pcs_hardware_version:
         register: 10118
@@ -532,7 +533,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: string
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     pcs_rated_power:
         register: 10124
@@ -544,7 +545,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     pcs_maximum_active_power:
         register: 10126
@@ -556,7 +557,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     pcs_maximum_apparent_power:
         register: 10128
@@ -568,7 +569,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     pcs_numbers_of_mppt:
         register: 10130
@@ -578,7 +579,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     pcs_strings_per_mppt:
         register: 10131
@@ -588,7 +589,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     pcs_output_mode:
         register: 10132
@@ -596,7 +597,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     # ========================================================================
     # CLASSIFICATION 4 : PCS - Status & Alarm
@@ -612,7 +613,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     pcs_alarm_1:
         register: 10144
@@ -748,7 +749,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     pcs_pv1_current:
         register: 10168
@@ -759,7 +760,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     pcs_pv2_voltage:
         register: 10169
@@ -770,7 +771,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     pcs_pv2_current:
         register: 10170
@@ -781,7 +782,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     pcs_pv3_voltage:
         register: 10171
@@ -792,7 +793,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     pcs_pv3_current:
         register: 10172
@@ -803,7 +804,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     pcs_pv4_voltage:
         register: 10173
@@ -814,7 +815,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     pcs_pv4_current:
         register: 10174
@@ -825,7 +826,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     pcs_pv5_voltage:
         register: 10175
@@ -836,7 +837,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     pcs_pv5_current:
         register: 10176
@@ -847,7 +848,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     pcs_pv6_voltage:
         register: 10177
@@ -858,7 +859,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     pcs_pv6_current:
         register: 10178
@@ -869,7 +870,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     pcs_pv7_voltage:
         register: 10179
@@ -880,7 +881,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     pcs_pv7_current:
         register: 10180
@@ -891,7 +892,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     pcs_pv8_voltage:
         register: 10181
@@ -902,7 +903,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     pcs_pv8_current:
         register: 10182
@@ -913,7 +914,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     pcs_totalpv_power:
         register: 10183
@@ -925,7 +926,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     pcs_daily_pv_generation:
         register: 10185
@@ -937,7 +938,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     pcs_total_pv_generation:
         register: 10187
@@ -949,7 +950,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     # ========================================================================
     # CLASSIFICATION 6 : Grid Information
@@ -966,7 +967,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     grid_ubc_voltage:
         register: 10200
@@ -977,7 +978,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     grid_uca_voltage:
         register: 10201
@@ -988,7 +989,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     grid_phase_a_voltage:
         register: 10202
@@ -999,7 +1000,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     grid_phase_b_voltage:
         register: 10203
@@ -1010,7 +1011,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     grid_phase_c_voltage:
         register: 10204
@@ -1021,7 +1022,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     grid_phase_a_current:
         register: 10205
@@ -1032,7 +1033,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     grid_phase_b_current:
         register: 10206
@@ -1043,7 +1044,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     grid_phase_c_current:
         register: 10207
@@ -1054,7 +1055,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     grid_active_power:
         register: 10208
@@ -1066,7 +1067,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     grid_reactive_power:
         register: 10210
@@ -1078,7 +1079,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     grid_power_factor:
         register: 10212
@@ -1088,7 +1089,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     grid_frequency:
         register: 10213
@@ -1099,7 +1100,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     # ========================================================================
     # CLASSIFICATION 7 : Backup Information
@@ -1116,7 +1117,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     backup_ubc_voltage:
         register: 10225
@@ -1127,7 +1128,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     backup_uca_voltage:
         register: 10226
@@ -1138,7 +1139,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     backup_phase_a_voltage:
         register: 10227
@@ -1149,7 +1150,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     backup_phase_b_voltage:
         register: 10228
@@ -1160,7 +1161,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     backup_phase_c_voltage:
         register: 10229
@@ -1171,7 +1172,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     backup_phase_a_current:
         register: 10230
@@ -1182,7 +1183,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     backup_phase_b_current:
         register: 10231
@@ -1193,7 +1194,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     backup_phase_c_current:
         register: 10232
@@ -1204,7 +1205,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     backup_active_power:
         register: 10233
@@ -1216,7 +1217,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     backup_reactive_power:
         register: 10235
@@ -1228,7 +1229,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     backup_power_factor:
         register: 10237
@@ -1238,7 +1239,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     backup_frequency:
         register: 10238
@@ -1249,7 +1250,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: 
 
     # ========================================================================
     # CLASSIFICATION 8 : Battery  Information
@@ -1265,7 +1266,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     battery_rated_capacity:
         register: 10250
@@ -1277,7 +1278,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     battery_status:
         register: 10252
@@ -1286,7 +1287,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     battery_voltage:
         register: 10253
@@ -1297,7 +1298,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     battery_power:
         register: 10254
@@ -1309,7 +1310,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     battery_soc:
         register: 10256
@@ -1319,7 +1320,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     battery_soh:
         register: 10257
@@ -1329,7 +1330,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     battery_daily_charge_energy:
         register: 10258
@@ -1341,7 +1342,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     battery_daily_discharge_energy:
         register: 10260
@@ -1353,7 +1354,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     battery_total_charge_energy:
         register: 10262
@@ -1365,7 +1366,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     battery_total_discharge_energy:
         register: 10264
@@ -1377,7 +1378,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     battery_alarm_1:
         register: 10266
@@ -1464,7 +1465,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: string
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     bp1_sn:
         register: 10294
@@ -1473,7 +1474,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: string
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     bp1_software_version:
         register: 10306
@@ -1482,7 +1483,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: string
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     bp1_hardware_version:
         register: 10312
@@ -1491,7 +1492,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: string
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     bp1_rate_capacity:
         register: 10318
@@ -1503,7 +1504,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     bp1_status:
         register: 10320
@@ -1511,7 +1512,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     bp1_voltage:
         register: 10321
@@ -1522,7 +1523,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     bp1_power:
         register: 10322
@@ -1534,7 +1535,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     bp1_soc:
         register: 10324
@@ -1544,7 +1545,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     bp1_soh:
         register: 10325
@@ -1554,7 +1555,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     bp1_total_discharge_energy:
         register: 10326
@@ -1565,7 +1566,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     bp1_maximum_temperature:
         register: 10328
@@ -1576,7 +1577,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     bp1_minimum_temperature:
         register: 10329
@@ -1587,7 +1588,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     # ========================================================================
     # CLASSIFICATION 10 : Battery Pack 2 Information
@@ -1602,7 +1603,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: string
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     bp2_sn:
         register: 10350
@@ -1611,7 +1612,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: string
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     bp2_software_version:
         register: 10362
@@ -1620,7 +1621,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: string
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     bp2_hardware_version:
         register: 10368
@@ -1629,7 +1630,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: string
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     bp2_rate_capacity:
         register: 10374
@@ -1641,7 +1642,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     bp2_status:
         register: 10376
@@ -1649,7 +1650,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     bp2_voltage:
         register: 10377
@@ -1660,7 +1661,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     bp2_power:
         register: 10378
@@ -1672,7 +1673,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     bp2_soc:
         register: 10380
@@ -1682,7 +1683,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     bp2_soh:
         register: 10381
@@ -1692,7 +1693,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     bp2_total_discharge_energy:
         register: 10382
@@ -1703,7 +1704,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     bp2_maximum_temperature:
         register: 10384
@@ -1714,7 +1715,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     bp2_minimum_temperature:
         register: 10385
@@ -1725,7 +1726,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     # ========================================================================
     # CLASSIFICATION 11 : Meter Information
@@ -1738,7 +1739,7 @@ SENSOR_DEFINITIONS:
         unit: null
         enabled_by_default: true
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     meter_type:
         register: 10630
@@ -1747,7 +1748,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: very_low
 
     meter_status:
         register: 10631
@@ -1756,7 +1757,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     meter_phase_a_voltage:
         register: 10632
@@ -1767,7 +1768,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     meter_phase_b_voltage:
         register: 10633
@@ -1778,7 +1779,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     meter_phase_c_voltage:
         register: 10634
@@ -1789,7 +1790,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     meter_phase_a_current:
         register: 10635
@@ -1800,7 +1801,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     meter_phase_b_current:
         register: 10636
@@ -1811,7 +1812,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     meter_phasec_current:
         register: 10637
@@ -1822,7 +1823,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     meter_phase_a_active_power:
         register: 10638
@@ -1834,7 +1835,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     meter_phase_b_active_power:
         register: 10640
@@ -1846,7 +1847,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     meter_phase_c_active_power:
         register: 10642
@@ -1858,7 +1859,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     meter_total_active_power:
         register: 10644
@@ -1870,7 +1871,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     meter_total_reactive_power:
         register: 10646
@@ -1882,7 +1883,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     meter_power_factor:
         register: 10648
@@ -1892,7 +1893,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     meter_grid_frequency:
         register: 10649
@@ -1903,7 +1904,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint16
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     meter_phase_a_forward_active_energy:
         register: 10650
@@ -1915,7 +1916,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     meter_phase_b_forward_active_energy:
         register: 10652
@@ -1927,7 +1928,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     meter_phase_c_forward_active_energy:
         register: 10654
@@ -1939,7 +1940,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     meter_total_forward_active_energy:
         register: 10656
@@ -1951,7 +1952,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     meter_phase_a_reverse_active_energy:
         register: 10658
@@ -1963,7 +1964,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     meter_phase_b_reverse_active_energy:
         register: 10660
@@ -1975,7 +1976,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     meter_phase_c_reverse_active_energy:
         register: 10662
@@ -1987,7 +1988,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
     meter_total_reverse_active_energy:
         register: 10664
@@ -1999,7 +2000,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: low
+        scan_interval: medium
 
 
 
