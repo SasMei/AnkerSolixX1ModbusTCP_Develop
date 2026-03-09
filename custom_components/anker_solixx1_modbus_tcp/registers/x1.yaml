@@ -373,7 +373,6 @@ SENSOR_DEFINITIONS:
         register: 10060
         count: 2
         unit: null
-        device_class: "timestamp"
         enabled_by_default: true
         data_type: uint32
         precision: 1
