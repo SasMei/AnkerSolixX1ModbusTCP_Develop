@@ -613,7 +613,8 @@
       },
       "meter_total_reverse_active_energy": {
         "name": "Meter Total Reverse Active Energy"
-      },
+      }
+    },  
     "binary_sensor": {
       "wifi_status": {
         "name": "WLAN-Status"
