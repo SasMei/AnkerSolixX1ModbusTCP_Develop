@@ -94,7 +94,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: low
+        scan_interval: high
 
     load_power:
         register: 10010
@@ -143,7 +143,7 @@ SENSOR_DEFINITIONS:
     daily_pv_generation:
         register: 10016
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
@@ -155,7 +155,7 @@ SENSOR_DEFINITIONS:
     total_pv_generation:
         register: 10018
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
@@ -167,7 +167,7 @@ SENSOR_DEFINITIONS:
     daily_battery_charge_energy:
         register: 10020
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
@@ -179,7 +179,7 @@ SENSOR_DEFINITIONS:
     total_battery_charge_energy:
         register: 10022
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
@@ -191,7 +191,7 @@ SENSOR_DEFINITIONS:
     daily_load_consumption_energy:
         register: 10024
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
@@ -203,7 +203,7 @@ SENSOR_DEFINITIONS:
     total_load_consumption_energy:
         register: 10026
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
@@ -215,7 +215,7 @@ SENSOR_DEFINITIONS:
     daily_purchased_energy:
         register: 10028
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
@@ -227,7 +227,7 @@ SENSOR_DEFINITIONS:
     total_purchased_energy:
         register: 10030
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
@@ -239,7 +239,7 @@ SENSOR_DEFINITIONS:
     daily_feed_in_energy:
         register: 10032
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
@@ -251,7 +251,7 @@ SENSOR_DEFINITIONS:
     total_feed_in_energy:
         register: 10034
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
@@ -270,7 +270,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: medium
+        scan_interval: high
 
     dischargeable_power:
         register: 10038
@@ -282,7 +282,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: medium
+        scan_interval: high
 
     number_of_pcs:
         register: 10040
@@ -563,7 +563,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: medium
+        scan_interval: very_low
 
     pcs_maximum_active_power:
         register: 10126
@@ -950,7 +950,7 @@ SENSOR_DEFINITIONS:
     pcs_daily_pv_generation:
         register: 10185
         count: 2
-        scale: 1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
@@ -962,7 +962,7 @@ SENSOR_DEFINITIONS:
     pcs_total_pv_generation:
         register: 10187
         count: 2
-        scale: 1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
@@ -1098,7 +1098,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: medium
+        scan_interval: high
 
     grid_power_factor:
         register: 10212
@@ -1248,7 +1248,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: medium
+        scan_interval: high
 
     backup_power_factor:
         register: 10237
@@ -1290,14 +1290,14 @@ SENSOR_DEFINITIONS:
     battery_rated_capacity:
         register: 10250
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "total"
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: medium
+        scan_interval: very:low
 
     battery_status:
         register: 10252
@@ -1355,10 +1355,10 @@ SENSOR_DEFINITIONS:
     battery_daily_charge_energy:
         register: 10258
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "total"
         enabled_by_default: true
         data_type: uint32
         precision: 1
@@ -1367,10 +1367,10 @@ SENSOR_DEFINITIONS:
     battery_daily_discharge_energy:
         register: 10260
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "total"
         enabled_by_default: true
         data_type: uint32
         precision: 1
@@ -1379,7 +1379,7 @@ SENSOR_DEFINITIONS:
     battery_total_charge_energy:
         register: 10262
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
@@ -1391,7 +1391,7 @@ SENSOR_DEFINITIONS:
     battery_total_discharge_energy:
         register: 10264
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
@@ -1517,14 +1517,14 @@ SENSOR_DEFINITIONS:
     bp1_rate_capacity:
         register: 10318
         count: 2
-        scale: 0.01
+        scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "total"
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: medium
+        scan_interval: very_low
 
     bp1_status:
         register: 10320
@@ -1580,8 +1580,9 @@ SENSOR_DEFINITIONS:
     bp1_total_discharge_energy:
         register: 10326
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
+        device_class: "energy"
         state_class: "total_increasing"
         enabled_by_default: true
         data_type: uint32
@@ -1655,14 +1656,14 @@ SENSOR_DEFINITIONS:
     bp2_rate_capacity:
         register: 10374
         count: 2
-        scale: 0.01
+        scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "total"
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: medium
+        scan_interval: very:low
 
     bp2_status:
         register: 10376
@@ -1718,8 +1719,9 @@ SENSOR_DEFINITIONS:
     bp2_total_discharge_energy:
         register: 10382
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
+        device_class: "energy"
         state_class: "total_increasing"
         enabled_by_default: true
         data_type: uint32
@@ -1891,7 +1893,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: high
+        scan_interval: very_low
 
     meter_total_reactive_power:
         register: 10646
@@ -1903,7 +1905,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: int32
         precision: 1
-        scan_interval: medium
+        scan_interval: very_low
 
     meter_power_factor:
         register: 10648
@@ -1929,10 +1931,10 @@ SENSOR_DEFINITIONS:
     meter_phase_a_forward_active_energy:
         register: 10650
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "total"
         enabled_by_default: true
         data_type: uint32
         precision: 1
@@ -1941,10 +1943,10 @@ SENSOR_DEFINITIONS:
     meter_phase_b_forward_active_energy:
         register: 10652
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "total"
         enabled_by_default: true
         data_type: uint32
         precision: 1
@@ -1953,10 +1955,10 @@ SENSOR_DEFINITIONS:
     meter_phase_c_forward_active_energy:
         register: 10654
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "total"
         enabled_by_default: true
         data_type: uint32
         precision: 1
@@ -1965,22 +1967,22 @@ SENSOR_DEFINITIONS:
     meter_total_forward_active_energy:
         register: 10656
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: medium
+        scan_interval: very_low
 
     meter_phase_a_reverse_active_energy:
         register: 10658
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "total"
         enabled_by_default: true
         data_type: uint32
         precision: 1
@@ -1989,10 +1991,10 @@ SENSOR_DEFINITIONS:
     meter_phase_b_reverse_active_energy:
         register: 10660
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "total"
         enabled_by_default: true
         data_type: uint32
         precision: 1
@@ -2001,10 +2003,10 @@ SENSOR_DEFINITIONS:
     meter_phase_c_reverse_active_energy:
         register: 10662
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "total"
         enabled_by_default: true
         data_type: uint32
         precision: 1
@@ -2013,14 +2015,14 @@ SENSOR_DEFINITIONS:
     meter_total_reverse_active_energy:
         register: 10664
         count: 2
-        scale: 0.1
+        scale: 10
         unit: "Wh"
         device_class: "energy"
         state_class: "total_increasing"
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: medium
+        scan_interval: very_low
 
 
 EFFICIENCY_SENSOR_DEFINITIONS:

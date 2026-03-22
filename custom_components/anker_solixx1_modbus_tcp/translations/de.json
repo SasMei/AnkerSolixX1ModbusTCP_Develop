@@ -66,139 +66,139 @@
   "entity": {
     "sensor": {
       "plant_status": {
-        "name": "Status PV-Anlage"
+        "name": "Info Status PV-Anlage"
       },
       "info_battery_status": {
-        "name": "Info Battery Status"
+        "name": "Info Batterie Status"
       },
       "pv_power": {
-        "name": "PV Leistung"
+        "name": "Info PV Leistung"
       },
       "3rd_party_pv_power": {
-        "name": "3rd Party PV Power"
+        "name": "Info PV Leistung Drittanbieter"
       },
       "active_power_pcs_ac_side": {
-        "name": "Active Power PCS AC Side"
+        "name": "Info WR AC Wirkleistung"
       },
       "info_battery_power": {
-        "name": "Info Battery Power"
+        "name": "Info Batterie Leistung"
       },
       "load_power": {
-        "name": "Hausbedarf"
+        "name": "Info Hausbedarf"
       },
       "grid_power": {
-        "name": "Netzleistung"
+        "name": "Info Netzleistung"
       },
       "soc": {
-        "name": "SOC (%)"
+        "name": "Info Ladestand"
       },
       "soh": {
-        "name": "SOH (%)"
+        "name": "Info Gesundheit"
       },
       "daily_pv_generation": {
-        "name": "Tägliche PV Erzeugung"
+        "name": "Info Tägliche PV Erzeugung"
       },
       "total_pv_generation": {
-        "name": "Gesamte PV Erzeugung"
+        "name": "Info Gesamte PV Erzeugung"
       },
       "daily_battery_charge_energy": {
-        "name": "Daily Battery Charge Energy"
+        "name": "Info Tägliche Batterie Lade Energie"
       },
       "total_battery_charge_energy": {
-        "name": "Total Battery Charge Energy"
+        "name": "Info Gesamte Batterie Lade Energie"
       },
       "daily_load_consumption_energy": {
-        "name": "Daily Load Consumption Energy"
+        "name": "Info Täglicher Hausbedarf"
       },
       "total_load_consumption_energy": {
-        "name": "Total Load Consumption Energy"
+        "name": "Info Gesamter Hausbedarf"
       },
       "daily_purchased_energy": {
-        "name": "Daily Purchased Energy"
+        "name": "Info Täglicher Netzbezug"
       },
       "total_purchased_energy": {
-        "name": "Total Purchased Energy"
+        "name": "Info Gesamter Netzbezug"
       },
       "daily_feed_in_energy": {
-        "name": "Daily Feed_in_Energy"
+        "name": "Info Tägliche Einspeisung"
       },
       "total_feed_in_energy": {
-        "name": "Total Feed_in_Energy"
+        "name": "Info Gesamte Einspeisung"
       },
       "rechargeable_power": {
-        "name": "Rechargeable Power"
+        "name": "Info Ladeleistung"
       },
       "dischargeable_power": {
-        "name": "Dischargeable Power"
+        "name": "Info Entladeleistung"
       },
       "number_of_pcs": {
-        "name": "Anzahl WR"
+        "name": "Info Anzahl WR"
       },
       "number_of_available_pcs": {
-        "name": "Anzahl verfügbarer WR"
+        "name": "Info Anzahl verfügbarer WR"
       },
       "system_alarm_1": {
-        "name": "System Alarm 1"
+        "name": "Info System Alarm 1"
       },
       "system_alarm_2": {
-        "name": "System Alarm 2"
+        "name": "Info System Alarm 2"
       },
       "system_alarm_3": {
-        "name": "System Alarm 3"
+        "name": "Info System Alarm 3"
       },
       "system_alarm_4": {
-        "name": "System Alarm 4"
+        "name": "Info System Alarm 4"
       },
       "system_alarm_5": {
-        "name": "System Alarm 5"
+        "name": "Info System Alarm 5"
       },
       "system_alarm_6": {
-        "name": "System Alarm 6"
+        "name": "Info System Alarm 6"
       },
       "system_alarm_7": {
-        "name": "System Alarm 7"
+        "name": "Info System Alarm 7"
       },
       "system_alarm_8": {
-        "name": "System Alarm 8"
+        "name": "Info System Alarm 8"
       },
       "system_time": {
-        "name": "Systemzeit (UnixTime)"
+        "name": "Ctrl Systemzeit (UnixTime)"
       },
       "time_zone": {
-        "name": "Zeitzone (in Sekunden)"
+        "name": "Ctrl Zeitzone (in Sekunden)"
       },
       "dst": {
-        "name": "Sommerzeit"
+        "name": "Ctrl Sommerzeit"
       },
       "work_mode": {
-        "name": "Work Mode"
+        "name": "Ctrl Arbeitsmodus"
       },
       "active_power_control_percentage": {
-        "name": "Active Power Control Percentage (%)"
+        "name": "Ctrl Prozentuale Wirkleistungsregelung"
       },
       "reactive_power_control_percentage": {
-        "name": "Reactive Power Control Percentage (%)"
+        "name": "Ctrl Prozentuale Blindleistungsregelung"
       },
       "battery_charge_discharge_control": {
-        "name": "Battery Charge_Discharge Control"
+        "name": "Ctrl Batterie Lade-/Entladekontrolle"
       },
       "switch_on_off_control": {
-        "name": "Switch On_Off Control"
+        "name": "Ctrl Ein-/Ausschalter"
       },
       "export_power_limit_control_mode": {
-        "name": "Export Power Limit Control Mode"
+        "name": "Ctrl Modus zur Begrenzung der Einspeiseleistung"
       },
       "export_power_limit_control_value": {
-        "name": "Export Power Limit Control Value"
+        "name": "Ctrl Wert der Einspeiseleistungsbegrenzung"
       },
       "import_power_limit_control_mode": {
-        "name": "Import Power Limit Control Mode"
+        "name": "Ctrl Modus zur Begrenzung der Bezugsleistung"
       },
       "import_power_limit_control_value": {
-        "name": "Import Power Limit Control Value"
+        "name": "Ctrl Wert der Bezugsleistungsbegrenzung"
       },
       "com_disconnect_tie_with_vpp": {
-        "name": "Com Disconnect Tie with VPP (s)"
+        "name": "Cgtrl Kommunikationsseitige Trennung vom VPP"
       },
       "pcs_model_name": {
         "name": "WR Modelname"
@@ -213,13 +213,13 @@
         "name": "WR Hardware Version"
       },
       "pcs_rated_power": {
-        "name": "WR oinale Leistung"
+        "name": "WR Nennleistung"
       },
       "pcs_maximum_active_power": {
-        "name": "PCS Maximum Active Power"
+        "name": "WR maximale Wirkleistung"
       },
       "pcs_maximum_apparent_power": {
-        "name": "PCS Maximum Apparent Power (kVA)"
+        "name": "WR maximale Scheinleistung"
       },
       "pcs_numbers_of_mppt": {
         "name": "WR Anzahl MPPT"
@@ -273,52 +273,52 @@
         "name": "WR Interne Temperatur (°C)"
       },
       "pcs_pv1_voltage": {
-        "name": "PCS PV1 Spannung"
+        "name": "WR PV1 Spannung"
       },
       "pcs_pv1_current": {
-        "name": "PCS PV1 Strom"
+        "name": "WR PV1 Strom"
       },
       "pcs_pv2_voltage": {
-        "name": "PCS PV2 Spannung"
+        "name": "WR PV2 Spannung"
       },
       "pcs_pv2_current": {
-        "name": "PCS PV2 Strom"
+        "name": "WR PV2 Strom"
       },
       "pcs_pv3_voltage": {
-        "name": "PCS PV3 Spannung"
+        "name": "WR PV3 Spannung"
       },
       "pcs_pv3_current": {
-        "name": "PCS PV3 Strom"
+        "name": "WR PV3 Strom"
       },
       "pcs_pv4_voltage": {
-        "name": "PCS PV4 Spannung"
+        "name": "WR PV4 Spannung"
       },
       "pcs_pv4_current": {
-        "name": "PCS PV4 Strom"
+        "name": "WR PV4 Strom"
       },
       "pcs_pv5_voltage": {
-        "name": "PCS PV5 Spannung"
+        "name": "WR PV5 Spannung"
       },
       "pcs_pv5_current": {
-        "name": "PCS PV5 Strom"
+        "name": "WR PV5 Strom"
       },
       "pcs_pv6_voltage": {
-        "name": "PCS PV6 Spannung"
+        "name": "WR PV6 Spannung"
       },
       "pcs_pv6_current": {
-        "name": "PCS PV6 Strom"
+        "name": "WR PV6 Strom"
       },
       "pcs_pv7_voltage": {
-        "name": "PCS PV7 Spannung"
+        "name": "WR PV7 Spannung"
       },
       "pcs_pv7_current": {
-        "name": "PCS PV7 Strom"
+        "name": "WR PV7 Strom"
       },
       "pcs_pv8_voltage": {
-        "name": "PCS PV8 Spannung"
+        "name": "WR PV8 Spannung"
       },
       "pcs_pv8_current": {
-        "name": "PCS PV8 Strom"
+        "name": "WR PV8 Strom"
       },
       "pcs_totalpv_power": {
         "name": "WR Solarleistung"
@@ -330,88 +330,88 @@
         "name": "WR gesamte Solarenergie"
       },
       "grid_uab_voltage": {
-        "name": "Netz Uab Spannung"
+        "name": "Netz L1-L2 Spannung"
       },
       "grid_ubc_voltage": {
-        "name": "Netz Ubc Spannung"
+        "name": "Netz L2-L3 Spannung"
       },
       "grid_uca_voltage": {
-        "name": "Netz Uca Spannung"
+        "name": "Netz L3-L1 Spannung"
       },
       "grid_phase_a_voltage": {
-        "name": "Netz Phase A Spannung"
+        "name": "Netz L1 Spannung"
       },
       "grid_phase_b_voltage": {
-        "name": "Netz Phase B Spannung"
+        "name": "Netz L2 Spannung"
       },
       "grid_phase_c_voltage": {
-        "name": "Netz Phase C Spannung"
+        "name": "Netz L3 Spannung"
       },
       "grid_phase_a_current": {
-        "name": "Grid Phase A Current (A)"
+        "name": "Netz L1 Stom"
       },
       "grid_phase_b_current": {
-        "name": "Grid Phase B Current (A)"
+        "name": "Netz L2 Strom"
       },
       "grid_phase_c_current": {
-        "name": "Grid Phase C Current (A)"
+        "name": "Netz L3 Strom"
       },
       "grid_active_power": {
-        "name": "Grid Active Power"
+        "name": "Netz Wirkleistung"
       },
       "grid_reactive_power": {
-        "name": "Grid Reactive Power (kvar)"
+        "name": "Netz Scheinleistung"
       },
       "grid_power_factor": {
-        "name": "Grid Power Factor"
+        "name": "Netz Leistungsfaktor"
       },
       "grid_frequency": {
         "name": "Netzfrequenz"
       },
       "backup_uab_voltage": {
-        "name": "Backup Uab Voltage"
+        "name": "Notstrom L1-L2 Spannung"
       },
       "backup_ubc_voltage": {
-        "name": "Backup Ubc Voltage"
+        "name": "Notstrom L2-L3 Spannung"
       },
       "backup_uca_voltage": {
-        "name": "Backup Uca Voltage"
+        "name": "Notstrom L3-L1 Spannung"
       },
       "backup_phase_a_voltage": {
-        "name": "Backup Phase A Voltage"
+        "name": "Notstrom L1 Spannung"
       },
       "backup_phase_b_voltage": {
-        "name": "Backup Phase B Voltage"
+        "name": "Notstrom L2 Spannung"
       },
       "backup_phase_c_voltage": {
-        "name": "Backup Phase C Voltage"
+        "name": "Notstrom L3 Spannung"
       },
       "backup_phase_a_current": {
-        "name": "Backup Phase A Current (A)"
+        "name": "Notstrom L1 Strom"
       },
       "backup_phase_b_current": {
-        "name": "Backup Phase B Current (A)"
+        "name": "Notstrom L2 Strom"
       },
       "backup_phase_c_current": {
-        "name": "Backup Phase C Current (A)"
+        "name": "Notstrom L3 Strom"
       },
       "backup_active_power": {
-        "name": "Backup Active Power"
+        "name": "Notstrom Wirkleistung"
       },
       "backup_reactive_power": {
-        "name": "Backup Reactive Power (kvar)"
+        "name": "Notstrom Scheinleistung"
       },
       "backup_power_factor": {
-        "name": "Backup Power Factor"
+        "name": "Notstrom Leistungsfaktor"
       },
       "backup_frequency": {
         "name": "Notstrom Frequenz"
       },
       "battery_number_of_packs": {
-        "name": "Battery Number of Packs"
+        "name": "Batterie Anzahl Packs"
       },
       "battery_rated_capacity": {
-        "name": "Battery Rated Capacity"
+        "name": "Batterie Nennkapazität"
       },
       "battery_status": {
         "name": "Batterie Status"
@@ -441,28 +441,28 @@
         "name": "Batterie gesamte Entladeenergie"
       },
       "battery_alarm_1": {
-        "name": "Battery Alarm 1"
+        "name": "Batterie Alarm 1"
       },
       "battery_alarm_2": {
-        "name": "Battery Alarm 2"
+        "name": "Batterie Alarm 1"
       },
       "battery_alarm_3": {
-        "name": "Battery Alarm 3"
+        "name": "Batterie Alarm 1"
       },
       "battery_alarm_4": {
-        "name": "Battery Alarm 4"
+        "name": "Batterie Alarm 1"
       },
       "battery_alarm_5": {
-        "name": "Battery Alarm 5"
+        "name": "Batterie Alarm 1"
       },
       "battery_alarm_6": {
-        "name": "Battery Alarm 6"
+        "name": "Batterie Alarm 1"
       },
       "battery_alarm_7": {
-        "name": "Battery Alarm 7"
+        "name": "Batterie Alarm 1"
       },
       "battery_alarm_8": {
-        "name": "Battery Alarm 8"
+        "name": "Batterie Alarm 1"
       },
       "bp1_model_name": {
         "name": "BP1 Model Name"
@@ -477,31 +477,31 @@
         "name": "BP1 Hardware Version"
       },
       "bp1_rate_capacity": {
-        "name": "BP1 Rate Capacity"
+        "name": "BP1 Nennapazität"
       },
       "bp1_status": {
         "name": "BP1 Status"
       },
       "bp1_voltage": {
-        "name": "BP1 Voltage"
+        "name": "BP1 Spannung"
       },
       "bp1_power": {
-        "name": "BP1 Power"
+        "name": "BP1 Leistung"
       },
       "bp1_soc": {
-        "name": "BP1 SOC (%)"
+        "name": "BP1 Ladestand"
       },
       "bp1_soh": {
-        "name": "BP1 SOH (%)"
+        "name": "BP1 Gesundheit"
       },
       "bp1_total_discharge_energy": {
-        "name": "BP1 Total Discharge Energy"
+        "name": "BP1 gesamte Entladeenergie"
       },
       "bp1_maximum_temperature": {
-        "name": "BP1 Maximum Temperature (°C)"
+        "name": "BP1 maximale Temperatur (°C)"
       },
       "bp1_minimum_temperature": {
-        "name": "BP1 Minimum Temperature (°C)"
+        "name": "BP1 minimale Temperatur (°C)"
       },
       "bp2_model_name": {
         "name": "BP2 Model Name"
@@ -516,103 +516,103 @@
         "name": "BP2 Hardware Version"
       },
       "bp2_rate_capacity": {
-        "name": "BP2 Rate Capacity"
+        "name": "BP2 Nennapazität"
       },
       "bp2_status": {
         "name": "BP2 Status"
       },
       "bp2_voltage": {
-        "name": "BP2 Voltage"
+        "name": "BP2 Spannung"
       },
       "bp2_power": {
-        "name": "BP2 Power"
+        "name": "BP2 Leistung"
       },
       "bp2_soc": {
-        "name": "BP2 SOC (%)"
+        "name": "BP2 Ladestand"
       },
       "bp2_soh": {
-        "name": "BP2 SOH (%)"
+        "name": "BP2 Gesundheit"
       },
       "bp2_total_discharge_energy": {
-        "name": "BP2 Total Discharge Energy"
+        "name": "BP2 gesamte Entladeenergie"
       },
       "bp2_maximum_temperature": {
-        "name": "BP2 Maximum Temperature (°C)"
+        "name": "BP2 maximale Temperatur (°C)"
       },
       "bp2_minimum_temperature": {
-        "name": "BP2 Minimum Temperature (°C)"
+        "name": "BP2 minimale Temperatur (°C)"
       },
       "meter_model": {
-        "name": "Meter Model"
+        "name": "Zähler Model"
       },
       "meter_type": {
-        "name": "Meter Type"
+        "name": "Zähler Typ"
       },
       "meter_status": {
-        "name": "Meter Status"
+        "name": "Zähler Status"
       },
       "meter_phase_a_voltage": {
-        "name": "Meter Phase A Voltage"
+        "name": "Zähler L1 Spannung"
       },
       "meter_phase_b_voltage": {
-        "name": "Meter Phase B Voltage"
+        "name": "Zähler L2 Spannung"
       },
       "meter_phase_c_voltage": {
-        "name": "Meter Phase C Voltage"
+        "name": "Zähler L3 Spannung"
       },
       "meter_phase_a_current": {
-        "name": "Meter Phase A Current (A)"
+        "name": "Zähler L1 Strom"
       },
       "meter_phase_b_current": {
-        "name": "Meter Phase B Current (A)"
+        "name": "Zähler L2 Strom"
       },
       "meter_phasec_current": {
-        "name": "Meter PhaseC Current (A)"
+        "name": "Zähler L3 Strom"
       },
       "meter_phase_a_active_power": {
-        "name": "Meter Phase A Active Power"
+        "name": "Zähler L1 Wirkleistung"
       },
       "meter_phase_b_active_power": {
-        "name": "Meter Phase B Active Power"
+        "name": "Zähler L2 Wirkleistung"
       },
       "meter_phase_c_active_power": {
-        "name": "Meter Phase C Active Power"
+        "name": "Zähler L3 Wirkleistung"
       },
       "meter_total_active_power": {
-        "name": "Meter Total Active Power"
+        "name": "Zähler gesamte Wirkleistung"
       },
       "meter_total_reactive_power": {
-        "name": "Meter Total Reactive Power"
+        "name": "Zähler gesamte Scheinleistung"
       },
       "meter_power_factor": {
-        "name": "Meter Power Factor"
+        "name": "Zähler Leistungsfaktor"
       },
       "meter_grid_frequency": {
-        "name": "Meter Grid Frequency"
+        "name": "Zähler Netzfrequenz"
       },
       "meter_phase_a_forward_active_energy": {
-        "name": "Meter Phase A Forward Active Energy"
+        "name": "Zähler L1 Wirkenergie Bezug"
       },
       "meter_phase_b_forward_active_energy": {
-        "name": "Meter Phase B Forward Active Energy"
+        "name": "Zähler L2 Wirkenergie Bezug"
       },
       "meter_phase_c_forward_active_energy": {
-        "name": "Meter Phase C Forward Active Energy"
+        "name": "Zähler L3 Wirkenergie Bezug"
       },
       "meter_total_forward_active_energy": {
-        "name": "Meter Total Forward Active Energy"
+        "name": "Zähler ges. Wirkenergie Bezug"
       },
       "meter_phase_a_reverse_active_energy": {
-        "name": "Meter Phase A Reverse Active Energy"
+        "name": "Zähler L1 Wirkenergie Einspeisung"
       },
       "meter_phase_b_reverse_active_energy": {
-        "name": "Meter Phase B Reverse Active Energy"
+        "name": "Zähler L2 Wirkenergie Einspeisung"
       },
       "meter_phase_c_reverse_active_energy": {
-        "name": "Meter Phase C Reverse Active Energy"
+        "name": "Zähler L3 Wirkenergie Einspeisung"
       },
       "meter_total_reverse_active_energy": {
-        "name": "Meter Total Reverse Active Energy"
+        "name": "Zähler ges. Wirkenergie Einspeisung"
       }
     },  
     "binary_sensor": {
