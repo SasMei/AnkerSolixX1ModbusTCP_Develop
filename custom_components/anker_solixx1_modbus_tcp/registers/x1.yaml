@@ -30,6 +30,7 @@ SENSOR_DEFINITIONS:
 
     plant_status:
         register: 10000
+        scale: 1
         unit: null
         state_class: "measurement"
         enabled_by_default: true
@@ -39,6 +40,7 @@ SENSOR_DEFINITIONS:
 
     info_battery_status:
         register: 10001
+        scale: 1
         unit: null
         state_class: "measurement"
         enabled_by_default: true
@@ -284,6 +286,7 @@ SENSOR_DEFINITIONS:
 
     number_of_pcs:
         register: 10040
+        scale: 1
         unit: null
         state_class: "measurement"
         enabled_by_default: true
@@ -293,6 +296,7 @@ SENSOR_DEFINITIONS:
 
     number_of_available_pcs:
         register: 10041
+        scale: 1
         unit: null
         state_class: "measurement"
         enabled_by_default: true
@@ -302,6 +306,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_1:
         register: 10042
+        scale: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -310,6 +315,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_2:
         register: 10043
+        scale: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -318,6 +324,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_3:
         register: 10044
+        scale: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -326,6 +333,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_4:
         register: 10045
+        scale: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -334,6 +342,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_5:
         register: 10046
+        scale: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -342,6 +351,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_6:
         register: 10047
+        scale: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -350,6 +360,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_7:
         register: 10048
+        scale: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -358,6 +369,7 @@ SENSOR_DEFINITIONS:
 
     system_alarm_8:
         register: 10049
+        scale: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -373,6 +385,7 @@ SENSOR_DEFINITIONS:
     system_time:
         register: 10060
         count: 2
+        scale: 1
         unit: null
         enabled_by_default: true
         data_type: uint32
@@ -381,6 +394,7 @@ SENSOR_DEFINITIONS:
 
     time_zone:
         register: 10062
+        scale: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -389,6 +403,7 @@ SENSOR_DEFINITIONS:
 
     dst:
         register: 10063
+        scale: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -397,6 +412,7 @@ SENSOR_DEFINITIONS:
 
     work_mode:
         register: 10064
+        scale: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -454,6 +470,7 @@ SENSOR_DEFINITIONS:
     export_power_limit_control_value:
         register: 10075
         count: 2
+        scale: 1
         unit: "W"
         device_class: "power"
         state_class: "measurement"
@@ -474,6 +491,7 @@ SENSOR_DEFINITIONS:
     import_power_limit_control_value:
         register: 10078
         count: 2
+        scale: 1
         unit: "W"
         device_class: "power"
         state_class: "measurement"
@@ -593,6 +611,7 @@ SENSOR_DEFINITIONS:
 
     pcs_output_mode:
         register: 10132
+        scale: 1
         unit: null
         enabled_by_default: true
         data_type: uint16
@@ -742,7 +761,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv1_voltage:
         register: 10167
-        scale: 1
+        scale: 0.1
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -764,7 +783,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv2_voltage:
         register: 10169
-        scale: 1
+        scale: 0.1
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -786,7 +805,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv3_voltage:
         register: 10171
-        scale: 1
+        scale: 0.1
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -808,7 +827,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv4_voltage:
         register: 10173
-        scale: 1
+        scale: 0.1
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -830,7 +849,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv5_voltage:
         register: 10175
-        scale: 1
+        scale: 0.1
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -852,7 +871,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv6_voltage:
         register: 10177
-        scale: 1
+        scale: 0.1
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -874,7 +893,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv7_voltage:
         register: 10179
-        scale: 1
+        scale: 0.1
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -896,7 +915,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv8_voltage:
         register: 10181
-        scale: 1
+        scale: 0.1
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -1282,6 +1301,7 @@ SENSOR_DEFINITIONS:
 
     battery_status:
         register: 10252
+        scale: 1
         unit: null
         state_class: "measurement"
         enabled_by_default: true
