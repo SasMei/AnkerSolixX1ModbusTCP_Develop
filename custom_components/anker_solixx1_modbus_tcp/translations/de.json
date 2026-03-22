@@ -213,7 +213,7 @@
         "name": "WR Hardware Version"
       },
       "pcs_rated_power": {
-        "name": "PCS Rated Power"
+        "name": "WR oinale Leistung"
       },
       "pcs_maximum_active_power": {
         "name": "PCS Maximum Active Power"
@@ -222,103 +222,103 @@
         "name": "PCS Maximum Apparent Power (kVA)"
       },
       "pcs_numbers_of_mppt": {
-        "name": "PCS Numbers of MPPT"
+        "name": "WR Anzahl MPPT"
       },
       "pcs_strings_per_mppt": {
-        "name": "PCS Strings per MPPT"
+        "name": "WR Strings pro MPPT"
       },
       "pcs_output_mode": {
-        "name": "PCS Output Mode"
+        "name": "WR Ausgabe Modus"
       },
       "pcs_work_status": {
-        "name": "PCS Work Status"
+        "name": "WR Arbeitsstatus"
       },
       "pcs_alarm_1": {
-        "name": "PCS Alarm 1"
+        "name": "WR Alarm 1"
       },
       "pcs_alarm_2": {
-        "name": "PCS Alarm 2"
+        "name": "WR Alarm 2"
       },
       "pcs_alarm_3": {
-        "name": "PCS Alarm 3"
+        "name": "WR Alarm 3"
       },
       "pcs_alarm_4": {
-        "name": "PCS Alarm 4"
+        "name": "WR Alarm 4"
       },
       "pcs_alarm_5": {
-        "name": "PCS Alarm 5"
+        "name": "WR Alarm 5"
       },
       "pcs_alarm_6": {
-        "name": "PCS Alarm 6"
+        "name": "WR Alarm 6"
       },
       "pcs_alarm_7": {
-        "name": "PCS Alarm 7"
+        "name": "WR Alarm 7"
       },
       "pcs_alarm_8": {
-        "name": "PCS Alarm 8"
+        "name": "WR Alarm 8"
       },
       "pcs_alarm_9": {
-        "name": "PCS Alarm 9"
+        "name": "WR Alarm 9"
       },
       "pcs_alarm_10": {
-        "name": "PCS Alarm 10"
+        "name": "WR Alarm 10"
       },
       "pcs_alarm_11": {
-        "name": "PCS Alarm 11"
+        "name": "WR Alarm 11"
       },
       "pcs_alarm_12": {
-        "name": "PCS Alarm 12"
+        "name": "WR Alarm 12"
       },
       "pcs_internal_temperature": {
-        "name": "PCS Internal Temperature (°C)"
+        "name": "WR Interne Temperatur (°C)"
       },
       "pcs_pv1_voltage": {
-        "name": "PCS PV1 Voltage"
+        "name": "PCS PV1 Spannung"
       },
       "pcs_pv1_current": {
-        "name": "PCS PV1 Current (A)"
+        "name": "PCS PV1 Strom"
       },
       "pcs_pv2_voltage": {
-        "name": "PCS PV2 Voltage"
+        "name": "PCS PV2 Spannung"
       },
       "pcs_pv2_current": {
-        "name": "PCS PV2 Current (A)"
+        "name": "PCS PV2 Strom"
       },
       "pcs_pv3_voltage": {
-        "name": "PCS PV3 Voltage"
+        "name": "PCS PV3 Spannung"
       },
       "pcs_pv3_current": {
-        "name": "PCS PV3 Current (A)"
+        "name": "PCS PV3 Strom"
       },
       "pcs_pv4_voltage": {
-        "name": "PCS PV4 Voltage"
+        "name": "PCS PV4 Spannung"
       },
       "pcs_pv4_current": {
-        "name": "PCS PV4 Current (A)"
+        "name": "PCS PV4 Strom"
       },
       "pcs_pv5_voltage": {
-        "name": "PCS PV5 Voltage"
+        "name": "PCS PV5 Spannung"
       },
       "pcs_pv5_current": {
-        "name": "PCS PV5 Current (A)"
+        "name": "PCS PV5 Strom"
       },
       "pcs_pv6_voltage": {
-        "name": "PCS PV6 Voltage"
+        "name": "PCS PV6 Spannung"
       },
       "pcs_pv6_current": {
-        "name": "PCS PV6 Current (A)"
+        "name": "PCS PV6 Strom"
       },
       "pcs_pv7_voltage": {
-        "name": "PCS PV7 Voltage"
+        "name": "PCS PV7 Spannung"
       },
       "pcs_pv7_current": {
-        "name": "PCS PV7 Current (A)"
+        "name": "PCS PV7 Strom"
       },
       "pcs_pv8_voltage": {
-        "name": "PCS PV8 Voltage"
+        "name": "PCS PV8 Spannung"
       },
       "pcs_pv8_current": {
-        "name": "PCS PV8 Current (A)"
+        "name": "PCS PV8 Strom"
       },
       "pcs_totalpv_power": {
         "name": "WR Solarleistung"

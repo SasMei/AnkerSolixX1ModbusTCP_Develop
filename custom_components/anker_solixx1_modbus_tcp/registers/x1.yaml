@@ -761,7 +761,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv1_voltage:
         register: 10167
-        scale: 0.1
+        scale: 0.01
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -772,7 +772,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv1_current:
         register: 10168
-        scale: 1
+        scale: 0.1
         unit: "A"
         device_class: "current"
         state_class: "measurement"
@@ -783,7 +783,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv2_voltage:
         register: 10169
-        scale: 0.1
+        scale: 0.01
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -794,7 +794,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv2_current:
         register: 10170
-        scale: 1
+        scale: 0.1
         unit: "A"
         device_class: "current"
         state_class: "measurement"
@@ -805,7 +805,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv3_voltage:
         register: 10171
-        scale: 0.1
+        scale: 0.01
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -816,7 +816,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv3_current:
         register: 10172
-        scale: 1
+        scale: 0.1
         unit: "A"
         device_class: "current"
         state_class: "measurement"
@@ -827,7 +827,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv4_voltage:
         register: 10173
-        scale: 0.1
+        scale: 0.01
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -838,7 +838,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv4_current:
         register: 10174
-        scale: 1
+        scale: 0.1
         unit: "A"
         device_class: "current"
         state_class: "measurement"
@@ -849,7 +849,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv5_voltage:
         register: 10175
-        scale: 0.1
+        scale: 0.01
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -860,7 +860,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv5_current:
         register: 10176
-        scale: 1
+        scale: 0.1
         unit: "A"
         device_class: "current"
         state_class: "measurement"
@@ -871,7 +871,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv6_voltage:
         register: 10177
-        scale: 0.1
+        scale: 0.01
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -882,7 +882,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv6_current:
         register: 10178
-        scale: 1
+        scale: 0.1
         unit: "A"
         device_class: "current"
         state_class: "measurement"
@@ -893,7 +893,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv7_voltage:
         register: 10179
-        scale: 0.1
+        scale: 0.01
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -904,7 +904,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv7_current:
         register: 10180
-        scale: 1
+        scale: 0.1
         unit: "A"
         device_class: "current"
         state_class: "measurement"
@@ -915,7 +915,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv8_voltage:
         register: 10181
-        scale: 0.1
+        scale: 0.01
         unit: "V"
         device_class: "voltage"
         state_class: "measurement"
@@ -926,7 +926,7 @@ SENSOR_DEFINITIONS:
 
     pcs_pv8_current:
         register: 10182
-        scale: 1
+        scale: 0.1
         unit: "A"
         device_class: "current"
         state_class: "measurement"
