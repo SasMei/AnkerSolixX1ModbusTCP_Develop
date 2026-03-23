@@ -146,7 +146,7 @@ SENSOR_DEFINITIONS:
         scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "increasing"
         enabled_by_default: true
         data_type: uint32
         precision: 1
@@ -170,7 +170,7 @@ SENSOR_DEFINITIONS:
         scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "increasing"
         enabled_by_default: true
         data_type: uint32
         precision: 1
@@ -194,7 +194,7 @@ SENSOR_DEFINITIONS:
         scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "increasing"
         enabled_by_default: true
         data_type: uint32
         precision: 1
@@ -218,7 +218,7 @@ SENSOR_DEFINITIONS:
         scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "increasing"
         enabled_by_default: true
         data_type: uint32
         precision: 1
@@ -242,7 +242,7 @@ SENSOR_DEFINITIONS:
         scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "increasing"
         enabled_by_default: true
         data_type: uint32
         precision: 1
@@ -803,138 +803,6 @@ SENSOR_DEFINITIONS:
         precision: 1
         scan_interval: high
 
-    pcs_pv3_voltage:
-        register: 10171
-        scale: 0.01
-        unit: "V"
-        device_class: "voltage"
-        state_class: "measurement"
-        enabled_by_default: true
-        data_type: uint16
-        precision: 1
-        scan_interval: medium
-
-    pcs_pv3_current:
-        register: 10172
-        scale: 0.1
-        unit: "A"
-        device_class: "current"
-        state_class: "measurement"
-        enabled_by_default: true
-        data_type: uint16
-        precision: 1
-        scan_interval: high
-
-    pcs_pv4_voltage:
-        register: 10173
-        scale: 0.01
-        unit: "V"
-        device_class: "voltage"
-        state_class: "measurement"
-        enabled_by_default: true
-        data_type: uint16
-        precision: 1
-        scan_interval: medium
-
-    pcs_pv4_current:
-        register: 10174
-        scale: 0.1
-        unit: "A"
-        device_class: "current"
-        state_class: "measurement"
-        enabled_by_default: true
-        data_type: uint16
-        precision: 1
-        scan_interval: high
-
-    pcs_pv5_voltage:
-        register: 10175
-        scale: 0.01
-        unit: "V"
-        device_class: "voltage"
-        state_class: "measurement"
-        enabled_by_default: true
-        data_type: uint16
-        precision: 1
-        scan_interval: medium
-
-    pcs_pv5_current:
-        register: 10176
-        scale: 0.1
-        unit: "A"
-        device_class: "current"
-        state_class: "measurement"
-        enabled_by_default: true
-        data_type: uint16
-        precision: 1
-        scan_interval: high
-
-    pcs_pv6_voltage:
-        register: 10177
-        scale: 0.01
-        unit: "V"
-        device_class: "voltage"
-        state_class: "measurement"
-        enabled_by_default: true
-        data_type: uint16
-        precision: 1
-        scan_interval: medium
-
-    pcs_pv6_current:
-        register: 10178
-        scale: 0.1
-        unit: "A"
-        device_class: "current"
-        state_class: "measurement"
-        enabled_by_default: true
-        data_type: uint16
-        precision: 1
-        scan_interval: high
-
-    pcs_pv7_voltage:
-        register: 10179
-        scale: 0.01
-        unit: "V"
-        device_class: "voltage"
-        state_class: "measurement"
-        enabled_by_default: true
-        data_type: uint16
-        precision: 1
-        scan_interval: medium
-
-    pcs_pv7_current:
-        register: 10180
-        scale: 0.1
-        unit: "A"
-        device_class: "current"
-        state_class: "measurement"
-        enabled_by_default: true
-        data_type: uint16
-        precision: 1
-        scan_interval: high
-
-    pcs_pv8_voltage:
-        register: 10181
-        scale: 0.01
-        unit: "V"
-        device_class: "voltage"
-        state_class: "measurement"
-        enabled_by_default: true
-        data_type: uint16
-        precision: 1
-        scan_interval: medium
-
-    pcs_pv8_current:
-        register: 10182
-        scale: 0.1
-        unit: "A"
-        device_class: "current"
-        state_class: "measurement"
-        enabled_by_default: true
-        data_type: uint16
-        precision: 1
-        scan_interval: high
-
     pcs_totalpv_power:
         register: 10183
         count: 2
@@ -953,7 +821,7 @@ SENSOR_DEFINITIONS:
         scale: 10
         unit: "Wh"
         device_class: "energy"
-        state_class: "total_increasing"
+        state_class: "increasing"
         enabled_by_default: true
         data_type: uint32
         precision: 1
@@ -1102,7 +970,7 @@ SENSOR_DEFINITIONS:
 
     grid_power_factor:
         register: 10212
-        scale: 1
+        scale: 0.001
         unit: null
         state_class: "measurement"
         enabled_by_default: true
@@ -1252,7 +1120,7 @@ SENSOR_DEFINITIONS:
 
     backup_power_factor:
         register: 10237
-        scale: 1
+        scale: 0.001
         unit: null
         state_class: "measurement"
         enabled_by_default: true
@@ -1297,7 +1165,7 @@ SENSOR_DEFINITIONS:
         enabled_by_default: true
         data_type: uint32
         precision: 1
-        scan_interval: very:low
+        scan_interval: very_low
 
     battery_status:
         register: 10252
@@ -1323,7 +1191,7 @@ SENSOR_DEFINITIONS:
     battery_power:
         register: 10254
         count: 2
-        scale: 1
+        scale: 0.001
         unit: "W"
         device_class: "power"
         state_class: "measurement"
